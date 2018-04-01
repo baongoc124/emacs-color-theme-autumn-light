@@ -46,7 +46,9 @@
  '(default          ((t (:foreground "black" :background "wheat" :inherit nil))))
  '(fringe           ((t (:background "wheat"))))
  '(cursor           ((t (:background "red"))))
- '(highlight        ((t (:foreground "white" :background "DarkSlateBlue"))))
+ ;; '(highlight        ((t (:foreground "white" :background "DarkSlateBlue"))))
+ '(highlight        ((t (:distant-foreground "yellow" :foreground "white" :background "DarkSlateBlue"))))
+ ;; '(highlight        ((t (:inverse-video t :foreground "DarkSlateBlue"))))
  '(region           ((t (:foreground "gray90" :background "DarkSlateBlue"))))
  '(button           ((t (:inherit (link)))))
  '(link             ((t (:underline (:color foreground-color :style line) :foreground "DarkSlateBlue"))) )
@@ -107,8 +109,10 @@
  '(markdown-url-face              ((t (:foreground "MediumBlue"))))
  '(markdown-list-face             ((t (:foreground "DarkGreen"))))
  '(markdown-inline-code-face      ((t (:foreground "black" :background "DarkKhaki"))))
- )
 
+;; stripe buffer
+ '(stripe-highlight      ((t (:background "wheat2"))))
+ )
 ;;;###autoload
 (and load-file-name
      (boundp 'custom-theme-load-path)
